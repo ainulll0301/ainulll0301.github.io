@@ -187,6 +187,18 @@ img {
   color: black;
 }
 
+.video-container {
+    display: flex;
+    justify-content: center;  /* center horizontally */
+    margin-top: 20px;         /* gap from the text */
+}
+
+.video-container video {
+    width: 80%;               /* adjust the width as needed */
+    max-width: 600px;         /* optional max width */
+    border-radius: 10px;      /* optional: rounded corners */
+}
+
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
 /* Base box style */
@@ -327,6 +339,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
