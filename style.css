@@ -189,21 +189,12 @@ img {
 
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
-/* Wrapper to center everything */
-.center-wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 180px); /* 2 columns */
-    grid-template-rows: repeat(2, auto);     /* 2 rows */
-    gap: 15px;                               /* space between boxes */
-    justify-content: center;                  /* center horizontally */
-    align-content: center;                    /* center vertically */
-    height: 100vh;                            /* full screen height */
-}
-
-/* Individual box */
+/* Base box style */
 .center-box {
+    position: absolute;
+    width: 180px;           /* perfect size */
     background-color: plum;
-    padding: 8px;
+    padding: 10px;
     border-radius: 10px;
     text-align: center;
     display: flex;
@@ -214,19 +205,45 @@ img {
 /* Title */
 .center-box h3 {
     margin: 0;
-    font-size: 13px;
+    font-size: 14px;
 }
 
+/* Image bigger */
 .center-box img {
     width: 100%;
-    height: 150px;          /* bigger image */
+    height: 150px;         /* bigger image */
     object-fit: cover;
     border-radius: 8px;
 }
 
-/* Audio same width */
+/* Audio full width */
 .center-box audio {
     width: 100%;
+}
+
+/* Center positions with gap from center */
+.box-top-left {
+    top: 40%;               /* slightly above center */
+    left: 40%;              /* slightly left from center */
+    transform: translate(-100%, -100%); /* shift the box so the corner points at center */
+}
+
+.box-top-right {
+    top: 40%;               /* slightly above center */
+    left: 60%;              /* slightly right from center */
+    transform: translate(0, -100%);
+}
+
+.box-bottom-left {
+    top: 60%;               /* slightly below center */
+    left: 40%;              /* slightly left from center */
+    transform: translate(-100%, 0);
+}
+
+.box-bottom-right {
+    top: 60%;               /* slightly below center */
+    left: 60%;              /* slightly right from center */
+    transform: translate(0, 0);
 }
 
 /* ----- CAFE HUNTING PAGE: 4 SLIDESHOW CORNER LAYOUT ----- */
@@ -310,6 +327,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
