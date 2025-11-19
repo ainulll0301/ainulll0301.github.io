@@ -189,18 +189,18 @@ img {
 
 /* ----- MUSIC PAGE (NO COLUMNS) ----- */
 
- /* Center grid container */
-.center-grid {
+/* Wrapper to center everything */
+.center-wrapper {
     display: grid;
     grid-template-columns: repeat(2, 180px); /* 2 columns */
     grid-template-rows: repeat(2, auto);     /* 2 rows */
-    gap: 20px;                               /* space between boxes */
+    gap: 15px;                               /* space between boxes */
     justify-content: center;                  /* center horizontally */
     align-content: center;                    /* center vertically */
     height: 100vh;                            /* full screen height */
 }
 
-/* Small picture + audio box */
+/* Individual box */
 .center-box {
     background-color: plum;
     padding: 8px;
@@ -208,13 +208,13 @@ img {
     text-align: center;
     display: flex;
     flex-direction: column;
-    gap: 6px;               /* small gap between image & audio */
+    gap: 6px;
 }
 
 /* Title */
 .center-box h3 {
     margin: 0;
-    font-size: 13px;        /* smaller font */
+    font-size: 13px;
 }
 
 /* Picture smaller */
@@ -311,6 +311,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
