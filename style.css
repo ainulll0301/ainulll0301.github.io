@@ -87,6 +87,17 @@ header {
     }
 }
 
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
+
 /* ----- ABOUT ME SECTION LAYOUT ----- */
 .about-container {
   display: flex;
@@ -355,6 +366,7 @@ header {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
