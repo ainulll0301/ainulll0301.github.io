@@ -33,7 +33,7 @@ header {
     color: black;
 }
 
-/* ----TEXT-BOX ---- */
+/* ---- TEXT BOX ---- */
 .center-container {
     background-color: white;
     width: 350px;
@@ -42,27 +42,49 @@ header {
     border: 3px solid purple;
     border-radius: 10px;
 }
+
+/* -------------------------------------------------- */
+/*               ANIMATION SECTION                    */
+/* -------------------------------------------------- */
+
+/* Fade-in animation for the title */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1.2s ease-out forwards;
 }
 
-/* ---- IMAGE ----*/ 
-img {
-  weidth: 220px;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 30px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0px;    /* FIXED - REMOVE HUGE PADDING */
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
 
-/* ----- CENTER IMAGE + TEXT BOX ----- */
-.center-section {
-    display: flex;
-    justify-content: center;           /* center LEFT-RIGHT */
-    align-items: center;               /* center TOP-BOTTOM */
-    height: calc(100vh - 120px);       /* full screen height */
-    gap: 40px;                         /* space between image and text */
+/* Slide image from left */
+.slide-left {
+    opacity: 0;
+    transform: translateX(-40px);
+    animation: slideLeft 1s ease-out forwards;
+}
+
+@keyframes slideLeft {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+/* Slide text box from right */
+.slide-right {
+    opacity: 0;
+    transform: translateX(40px);
+    animation: slideRight 1s ease-out forwards;
+}
+
+@keyframes slideRight {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /* ----- ABOUT ME SECTION LAYOUT ----- */
@@ -333,6 +355,7 @@ img {
   font-family: "Times New Roman", serif;
   text-shadow: 2px 2px 4px rgba(0,0,0,0.7); /* makes white text stand out */
 }
+
 
 
 
